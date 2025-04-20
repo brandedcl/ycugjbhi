@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Branded | متجر التصميم الرقمي</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Branded Logo" />
+        <span>Branded</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#order">طلب تصميم</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="#login" class="btn">تسجيل الدخول</a>
+        <a href="#signup" class="btn btn-primary">إنشاء حساب</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h1>حوّل فكرتك إلى تصميم رقمي احترافي</h1>
+      <p>نحن متخصصون في تصميم المواقع والمتاجر الإلكترونية والصور الاحترافية حسب طلبك.</p>
+      <a href="#order" class="btn btn-primary">ابدأ الآن</a>
+    </div>
+  </section>
+
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2>خدماتنا</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>تصميم مواقع ويب</h3>
+          <p>إنشاء مواقع إلكترونية احترافية متوافقة مع جميع الأجهزة.</p>
+        </div>
+        <div class="service-card">
+          <h3>تصميم متاجر إلكترونية</h3>
+          <p>بناء متجر رقمي يعرض منتجاتك ويتيح الدفع الإلكتروني.</p>
+        </div>
+        <div class="service-card">
+          <h3>تصميم صور ومنشورات</h3>
+          <p>تصاميم سوشيال ميديا بأفكار إبداعية بجودة عالية.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="order-section">
+    <div class="container">
+      <h2>اطلب تصميمك الآن</h2>
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="fullName">الاسم الكامل</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+        <div class="form-group">
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="serviceType">نوع الخدمة</label>
+          <select id="serviceType" name="serviceType" required>
+            <option value="">اختر الخدمة</option>
+            <option value="website">تصميم موقع ويب</option>
+            <option value="store">تصميم متجر إلكتروني</option>
+            <option value="graphic">تصميم صور</option>
+          </select>
+        </div>
+
+        <!-- تابع في السطور القادمة -->
+<div class="form-group">
+          <label for="details">تفاصيل إضافية</label>
+          <textarea id="details" name="details" rows="4" placeholder="صف فكرتك، الألوان المطلوبة، النصوص، الروابط، وكل ما تريده..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="logoUpload">تحميل شعارك (اختياري)</label>
+          <input type="file" id="logoUpload" name="logoUpload" accept="image/*" />
+        </div>
+        <div class="form-group">
+          <label for="navItems">عناصر التنقل (للموقع)</label>
+          <input type="text" id="navItems" name="navItems" placeholder="مثال: الرئيسية، من نحن، الخدمات، اتصل بنا" />
+        </div>
+        <div class="form-group">
+          <label>مدة التنفيذ المتوقعة</label>
+          <p>من 5 إلى 7 أيام عمل حسب نوع الطلب</p>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">تأكيد الطلب</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>من نحن</h2>
+      <p>نحن فريق متخصص في تقديم خدمات التصميم الرقمي بجودة عالية وبأفكار إبداعية. هدفنا هو تحويل أفكارك إلى واقع بصري يعكس هوية مشروعك.</p>
+      <div class="about-stats">
+        <div class="stat-card">
+          <h3>+200</h3>
+          <p>عميل سعيد</p>
+        </div>
+        <div class="stat-card">
+          <h3>+300</h3>
+          <p>تصميم منفذ</p>
+        </div>
+        <div class="stat-card">
+          <h3>5</h3>
+          <p>سنوات من الخبرة</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>تواصل معنا</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="contactName">الاسم</label>
+          <input type="text" id="contactName" name="contactName" required />
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">البريد الإلكتروني</label>
+          <input type="email" id="contactEmail" name="contactEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="message">رسالتك</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary">إرسال</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Branded</h4>
+          <p>منصة متخصصة في تقديم خدمات التصميم الرقمي بأسلوب احترافي وذوق رفيع.</p>
+        </div>
+        <div class="footer-col">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#order">طلب تصميم</a></li>
+            <li><a href="#about">من نحن</a></li>
+          </ul>
+        </div>
+<div class="footer-col">
+          <h4>تابعنا</h4>
+          <ul class="social-links">
+            <li><a href="#">تويتر</a></li>
+            <li><a href="#">انستغرام</a></li>
+            <li><a href="#">لينكدإن</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Branded - جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- صفحة الطلبات (لوحة المستخدم) -->
+  <section id="myOrders" class="my-orders-section hidden">
+    <div class="container">
+      <h2>طلباتي</h2>
+      <div id="ordersContainer">
+        <!-- سيتم تحميل الطلبات هنا ديناميكياً -->
+      </div>
+    </div>
+  </section>
+
+  <!-- صفحة تسجيل الدخول -->
+  <section id="loginSection" class="login-section hidden">
+    <div class="container">
+      <h2>تسجيل الدخول</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">البريد الإلكتروني</label>
+          <input type="email" id="loginEmail" name="loginEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">كلمة المرور</label>
+          <input type="password" id="loginPassword" name="loginPassword" required />
+        </div>
+        <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- صفحة لوحة التحكم للإدمن -->
+  <section id="adminPanel" class="admin-panel-section hidden">
+    <div class="container">
+      <h2>لوحة التحكم</h2>
+      <div id="adminOrders">
+        <!-- الطلبات الخاصة ستظهر هنا -->
+      </div>
+    </div>
+  </section>
+
+  <!-- صفحة إنشاء حساب -->
+  <section id="registerSection" class="register-section hidden">
+    <div class="container">
+      <h2>إنشاء حساب</h2>
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="registerName">الاسم</label>
+          <input type="text" id="registerName" name="registerName" required />
+        </div>
+        <div class="form-group">
+          <label for="registerEmail">البريد الإلكتروني</label>
+          <input type="email" id="registerEmail" name="registerEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="registerPassword">كلمة المرور</label>
+          <input type="password" id="registerPassword" name="registerPassword" required />
+        </div>
+        <button type="submit" class="btn btn-secondary">إنشاء الحساب</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- نافذة التأكيد بعد الدفع -->
+  <section id="confirmationSection" class="confirmation-section hidden">
+    <div class="container">
+      <h2>تم استلام طلبك</h2>
+      <p>شكراً لطلبك! تم استلام تفاصيلك وسيتم تنفيذها خلال 7 أيام عمل كحد أقصى.</p>
+      <a href="#home" class="btn btn-primary">العودة للرئيسية</a>
+    </div>
+  </section>
+
+  <!-- شريط التحميل -->
+  <div id="loadingBar" class="loading-bar hidden">
+    <div class="progress"></div>
+  </div>
+
+  <!-- نافذة الإشعارات -->
+  <div id="notificationPopup" class="notification-popup hidden">
+    <p id="notificationMessage">تم تنفيذ الإجراء بنجاح</p>
+  </div>
+
+</body>
+</html>
+<!-- ملفات الجافا سكريبت -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+  // إعداد التحميل عند إرسال النموذج
+  const forms = document.querySelectorAll('form');
+  const loadingBar = document.getElementById('loadingBar');
+  const notificationPopup = document.getElementById('notificationPopup');
+  const notificationMessage = document.getElementById('notificationMessage');
+
+  forms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      loadingBar.classList.remove('hidden');
+
+      setTimeout(() => {
+        loadingBar.classList.add('hidden');
+        notificationMessage.textContent = 'تم إرسال النموذج بنجاح';
+        notificationPopup.classList.remove('hidden');
+        setTimeout(() => {
+          notificationPopup.classList.add('hidden');
+        }, 3000);
+      }, 2000);
+    });
+  });
+
+  // التنقل بين الأقسام
+  function showSection(id) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => sec.classList.add('hidden'));
+    document.getElementById(id).classList.remove('hidden');
+  }
+
+  // عرض الطلبات في لوحة التحكم
+  function loadAdminOrders() {
+    const container = document.getElementById('adminOrders');
+    container.innerHTML = '<p>جاري تحميل الطلبات...</p>';
+
+    // محاكاة تحميل بيانات
+    setTimeout(() => {
+      container.innerHTML = `
+        <div class="order-card">
+          <h4>طلب تصميم موقع</h4>
+          <p>الإسم: عبدالله</p>
+          <p>البريد الإلكتروني: abd@example.com</p>
+          <p>الحالة: جاري التنفيذ</p>
+          <button onclick="markCompleted(this)">تم التنفيذ</button>
+        </div>
+      `;
+    }, 1000);
+  }
+
+  // تغيير حالة الطلب
+  function markCompleted(button) {
+    const card = button.parentElement;
+    const status = card.querySelector('p:nth-child(4)');
+    status.textContent = 'الحالة: تم التنفيذ';
+    button.remove();
+  }
+
+  // تسجيل الخروج
+  function logout() {
+    showSection('loginSection');
+    alert('تم تسجيل الخروج بنجاح');
+  }
+
+  // عرض صفحة تسجيل الدخول تلقائياً عند الفتح
+  document.addEventListener('DOMContentLoaded', () => {
+    showSection('home');
+  });
+</script>
+<!-- الفوتر -->
+<footer class="bg-gradient-to-r from-blue-800 to-purple-900 text-white p-8 mt-16">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-start gap-6">
+    <div>
+      <h4 class="text-xl font-bold mb-3">Branded</h4>
+      <p class="text-sm max-w-xs">
+        منصة متخصصة في تقديم خدمات التصميم الرقمي، تشمل تصميم المواقع، الشعارات، الصور، المتاجر الإلكترونية، وأكثر.
+      </p>
+    </div>
+    <div>
+      <h5 class="font-semibold mb-2">روابط سريعة</h5>
+      <ul class="text-sm space-y-1">
+        <li><a href="#home" class="hover:underline">الرئيسية</a></li>
+        <li><a href="#services" class="hover:underline">خدماتنا</a></li>
+        <li><a href="#order" class="hover:underline">طلب تصميم</a></li>
+        <li><a href="#contact" class="hover:underline">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="font-semibold mb-2">تابعنا</h5>
+      <div class="flex gap-3">
+        <a href="#" class="hover:text-gray-300">فيسبوك</a>
+        <a href="#" class="hover:text-gray-300">تويتر</a>
+        <a href="#" class="hover:text-gray-300">انستغرام</a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center text-sm mt-8 border-t border-gray-600 pt-4">
+    جميع الحقوق محفوظة © Branded 2025
+  </div>
+</footer>
+
+<!-- نافذة منبثقة للإشعارات -->
+<div id="notificationPopup" class="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-2 rounded shadow-lg hidden">
+  <span id="notificationMessage"></span>
+</div>
+
+<!-- نافذة تحميل -->
+<div id="loadingBar" class="fixed top-0 left-0 w-full h-1 bg-blue-600 animate-pulse hidden"></div>
+
+<!-- سكريبت التمرير الناعم -->
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+<!-- إدارة ظهور نموذج الطلب -->
+<script>
+  const orderFormSection = document.getElementById('orderForm');
+  const orderBtn = document.getElementById('orderNowBtn');
+
+  if(orderBtn){
+    orderBtn.addEventListener('click', () => {
+      orderFormSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+</script>
+</body>
+</html>
+<!-- نموذج الدخول -->
+<section id="loginSection" class="bg-white py-16 px-4 sm:px-6 lg:px-8 hidden">
+  <div class="max-w-md mx-auto bg-gray-100 rounded-xl p-8 shadow-lg">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">تسجيل الدخول</h2>
+    <form id="loginForm" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني</label>
+        <input type="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">كلمة المرور</label>
+        <input type="password" name="password" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition">دخول</button>
+    </form>
+  </div>
+</section>
+
+<!-- نموذج إنشاء حساب -->
+<section id="registerSection" class="bg-white py-16 px-4 sm:px-6 lg:px-8 hidden">
+  <div class="max-w-md mx-auto bg-gray-100 rounded-xl p-8 shadow-lg">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">إنشاء حساب</h2>
+    <form id="registerForm" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">الاسم الكامل</label>
+        <input type="text" name="fullname" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني</label>
+        <input type="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">كلمة المرور</label>
+        <input type="password" name="password" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+      <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 rounded transition">إنشاء الحساب</button>
+    </form>
+  </div>
+</section>
+
+<!-- زر التنقل السريع -->
+<div class="fixed bottom-6 left-6 z-50">
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700">
+    ↑
+  </button>
+</div>
+
+<!-- شريط إشعارات تنبيه -->
+<div id="errorBanner" class="fixed top-0 left-0 w-full bg-red-500 text-white text-center py-2 hidden">
+  <span id="errorText">حدث خطأ ما!</span>
+</div>
+<!-- قسم الأسئلة الشائعة -->
+<section id="faq" class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8">الأسئلة الشائعة</h2>
+    <div class="space-y-6 text-right">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-gray-700">كيف أطلب خدمة؟</h3>
+        <p class="text-gray-600 mt-2">كل ما عليك فعله هو تسجيل الدخول، ثم اختيار نوع التصميم، وتعبئة التفاصيل، ثم الدفع عبر PayPal.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-gray-700">ما هي طرق الدفع المتاحة؟</h3>
+        <p class="text-gray-600 mt-2">نحن نوفر الدفع عبر PayPal فقط لضمان الأمان وسهولة التعامل.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-gray-700">متى يتم تنفيذ الطلب؟</h3>
+        <p class="text-gray-600 mt-2">يتم تنفيذ الطلب خلال مدة أقصاها 14 يومًا من تاريخ الدفع، ويمكن أن تقل حسب نوع الخدمة.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-gray-700">هل يمكن تعديل الطلب بعد الإرسال؟</h3>
+        <p class="text-gray-600 mt-2">نعم، يمكنك التواصل معنا خلال أول 24 ساعة بعد الطلب لتعديل التفاصيل.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- قسم "تواصل معنا" -->
+<section id="contact" class="bg-white py-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8">تواصل معنا</h2>
+    <form id="contactForm" class="space-y-6 text-right">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">الاسم الكامل</label>
+        <input type="text" name="name" required class="w-full border border-gray-300 rounded px-3 py-2">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني</label>
+        <input type="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">رسالتك</label>
+        <textarea name="message" rows="4" required class="w-full border border-gray-300 rounded px-3 py-2"></textarea>
+      </div>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">إرسال</button>
+    </form>
+  </div>
+</section>
+
+<!-- سكربت بسيط للتنقل -->
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+    document.getElementById(id).classList.remove('hidden');
+  }
+</script>
+<!-- قسم تسجيل الدخول -->
+<section id="login" class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 hidden">
+  <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">تسجيل الدخول</h2>
+    <form id="loginForm" class="space-y-5 text-right">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني</label>
+        <input type="email" name="loginEmail" required class="w-full border border-gray-300 rounded px-3 py-2">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">كلمة المرور</label>
+        <input type="password" name="loginPassword" required class="w-full border border-gray-300 rounded px-3 py-2">
+      </div>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">دخول</button>
+    </form>
+  </div>
+</section>
+
+<!-- قسم إنشاء حساب -->
+<section id="register" class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 hidden">
+  <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">إنشاء حساب</h2>
+    <form id="registerForm" class="space-y-5 text-right">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">الاسم الكامل</label>
+        <input type="text" name="registerName" required class="w-full border border-gray-300 rounded px-3 py-2">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني</label>
+        <input type="email" name="registerEmail" required class="w-full border border-gray-300 rounded px-3 py-2">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">كلمة المرور</label>
+        <input type="password" name="registerPassword" required class="w-full border border-gray-300 rounded px-3 py-2">
+      </div>
+      <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 w-full">تسجيل</button>
+    </form>
+  </div>
+</section>
+
+<!-- سكربت تبديل بين تسجيل الدخول والتسجيل -->
+<script>
+  function toggleAuth(mode) {
+    document.getElementById('login').classList.toggle('hidden', mode !== 'login');
+    document.getElementById('register').classList.toggle('hidden', mode !== 'register');
+  }
+</script>
+
+<!-- بداية قسم الطلب -->
+<section id="order" class="py-20 bg-white px-4 sm:px-6 lg:px-8 hidden">
+  <div class="max-w-2xl mx-auto text-center mb-10">
+    <h2 class="text-3xl font-bold text-gray-800">طلب خدمة تصميم</h2>
+    <p class="text-gray-600 mt-2">يرجى تعبئة البيانات التالية بشكل دقيق</p>
+  </div>
+  <form id="orderForm" class="max-w-3xl mx-auto bg-gray-50 p-8 rounded-lg shadow text-right space-y-6">
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">نوع التصميم</label>
+      <select name="designType" required class="w-full border border-gray-300 rounded px-3 py-2">
+        <option value="">اختر نوع الخدمة</option>
+        <option value="website">تصميم موقع إلكتروني</option>
+        <option value="logo">تصميم شعار</option>
+        <option value="social">تصميم محتوى سوشيال ميديا</option>
+      </select>
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">تفاصيل إضافية</label>
+      <textarea name="orderDetails" rows="4" required class="w-full border border-gray-300 rounded px-3 py-2"></textarea>
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">رفع ملف (شعار أو مرجع)</label>
+      <input type="file" name="attachment" class="w-full border border-gray-300 rounded px-3 py-2">
+    </div>
+    <button type="submit" class="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700 w-full">التالي</button>
+  </form>
+</section>
+<!-- صفحة الدفع -->
+<section id="payment" class="py-20 bg-gray-50 px-4 sm:px-6 lg:px-8 hidden">
+  <div class="max-w-2xl mx-auto text-center mb-10">
+    <h2 class="text-3xl font-bold text-gray-800">الدفع</h2>
+    <p class="text-gray-600 mt-2">سعر الخدمة: <strong class="text-blue-600">$60</strong></p>
+  </div>
+  <div class="max-w-md mx-auto text-center">
+    <p class="text-gray-700 mb-6">يرجى الضغط على الزر أدناه لإتمام عملية الدفع عبر PayPal.</p>
+    <a href="https://paypal.me/bloomff/60" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
+      الدفع الآن
+    </a>
+  </div>
+</section>
+
+<!-- تأكيد الطلب -->
+<section id="confirmation" class="py-20 bg-white px-4 sm:px-6 lg:px-8 hidden">
+  <div class="max-w-2xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-green-600">تم إرسال الطلب بنجاح</h2>
+    <p class="text-gray-700 mt-4">تم استلام معلوماتك وسيتم تنفيذ الطلب خلال <strong>أسبوعين</strong>.</p>
+    <p class="text-gray-500 mt-2">سوف تتلقى إشعاراً على بريدك الإلكتروني عند بدء التنفيذ.</p>
+  </div>
+</section>
+
+<!-- لوحة تحكم الادمن -->
+<section id="adminPanel" class="py-20 px-4 sm:px-6 lg:px-8 hidden">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">لوحة تحكم الادمن</h2>
+    <div class="overflow-x-auto bg-white shadow rounded-lg">
+      <table class="min-w-full text-sm text-right">
+        <thead class="bg-gray-100 text-gray-700">
+          <tr>
+            <th class="px-6 py-3">رقم الطلب</th>
+            <th class="px-6 py-3">الاسم</th>
+            <th class="px-6 py-3">نوع الخدمة</th>
+            <th class="px-6 py-3">التفاصيل</th>
+            <th class="px-6 py-3">الحالة</th>
+            <th class="px-6 py-3">البريد الإلكتروني</th>
+            <th class="px-6 py-3">الإجراء</th>
+          </tr>
+        </thead>
+        <tbody id="ordersTableBody" class="text-gray-700">
+          <!-- البيانات يتم تحميلها من قاعدة البيانات -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- زر تسجيل الخروج -->
+<div id="adminLogoutBtn" class="fixed bottom-4 left-4 hidden">
+  <button onclick="adminLogout()" class="bg-red-600 text-white px-4 py-2 rounded shadow hover:bg-red-700">
+    تسجيل الخروج
+  </button>
+</div>
+
+<!-- سكربت تسجيل الخروج للادمن -->
+<script>
+  function adminLogout() {
+    localStorage.removeItem('adminLogin');
+    alert('تم تسجيل الخروج');
+    location.reload();
+  }
+</script>
+
+<!-- سكربت عرض الطلبات -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (localStorage.getItem('adminLogin')) {
+      document.getElementById('adminPanel').classList.remove('hidden');
+      document.getElementById('adminLogoutBtn').classList.remove('hidden');
+      // تحميل البيانات من قاعدة البيانات - سيتم الربط لاحقاً بالسيرفر
+    }
+  });
+</script>
+<!-- سكربت تفعيل تسجيل الدخول وتخزين البيانات في LocalStorage -->
+<script>
+  document.getElementById('loginForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const email = document.getElementById('loginEmail').value.trim();
+    const password = document.getElementById('loginPassword').value.trim();
+    
+    if (email && password) {
+      localStorage.setItem('userLogin', JSON.stringify({ email }));
+      alert("تم تسجيل الدخول بنجاح!");
+      showSection('home');
+    } else {
+      alert("يرجى إدخال البريد الإلكتروني وكلمة المرور.");
+    }
+  });
+</script>
+
+<!-- سكربت تسجيل الخروج -->
+<script>
+  function logoutUser() {
+    localStorage.removeItem('userLogin');
+    alert("تم تسجيل الخروج.");
+    showSection('login');
+  }
+</script>
+
+<!-- زر تسجيل الخروج -->
+<button onclick="logoutUser()" class="fixed top-4 left-4 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded shadow">
+  تسجيل الخروج
+</button>
+
+<!-- سكربت حماية لوحة التحكم -->
+<script>
+  function checkAdminAccess() {
+    const adminEmail = "brandedcalculator@gmail.com";
+    const adminPassword = "hackxd720242024";
+    const user = JSON.parse(localStorage.getItem('userLogin'));
+    
+    if (user?.email === adminEmail) {
+      showSection('adminPanel');
+    } else {
+      alert("غير مصرح لك بالدخول إلى لوحة التحكم.");
+      showSection('home');
+    }
+  }
+</script>
+
+<!-- زر دخول لوحة التحكم -->
+<button onclick="checkAdminAccess()" class="fixed bottom-4 left-4 bg-gray-800 text-white px-4 py-2 rounded shadow">
+  لوحة التحكم
+</button>
+
+<!-- سكربت عرض إشعار عند استقبال طلب جديد -->
+<script>
+  function notifyNewOrder() {
+    const orders = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+    if (orders.length > 0) {
+      const latest = orders[orders.length - 1];
+      alert(`طلب جديد من: ${latest.name} - ${latest.service} - ${latest.email}`);
+    }
+  }
+
+  // محاكاة استقبال الطلب بعد الدفع
+  function simulateOrderAfterPayment() {
+    const orderData = JSON.parse(localStorage.getItem('pendingOrder'));
+    if (orderData) {
+      let submitted = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+      submitted.push(orderData);
+      localStorage.setItem('submittedOrders', JSON.stringify(submitted));
+      localStorage.removeItem('pendingOrder');
+      notifyNewOrder();
+    }
+  }
+
+  // تفعيل المحاكاة بعد التحويل من PayPal
+  if (window.location.search.includes("payment=done")) {
+    simulateOrderAfterPayment();
+    showSection('confirmation');
+  }
+</script>
+
+<!-- سكربت إظهار تفاصيل الطلب -->
+<script>
+  function showOrderDetails(index) {
+    const orders = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+    const order = orders[index];
+    if (order) {
+      alert(`
+        الاسم: ${order.name}
+        البريد: ${order.email}
+        الخدمة: ${order.service}
+        الحالة: ${order.status || 'جاري التنفيذ'}
+      `);
+    }
+  }
+</script>
+
+<!-- مثال: زر عرض تفاصيل الطلب -->
+<div class="text-center mt-6">
+  <button onclick="showOrderDetails(0)" class="bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2 rounded shadow">
+    عرض تفاصيل الطلب الأخير
+  </button>
+</div>
+
+<!-- سكربت حماية الطلب من التكرار -->
+<script>
+  function disableDuplicateOrder() {
+    document.getElementById('submitOrderBtn')?.setAttribute('disabled', true);
+  }
+</script>
+<!-- قسم الشكر بعد الدفع -->
+<section id="confirmation" class="hidden text-center p-10">
+  <h2 class="text-3xl font-bold mb-4 text-green-600">شكرًا لك!</h2>
+  <p class="text-lg mb-4">تم استلام طلبك بنجاح. سيتم التواصل معك خلال 24 ساعة.</p>
+  <p class="text-sm text-gray-500">مدة تنفيذ الخدمة تختلف حسب نوع الطلب وقد تستغرق حتى أسبوعين.</p>
+  <button onclick="showSection('home')" class="mt-6 bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded">
+    العودة إلى الرئيسية
+  </button>
+</section>
+
+<!-- سكربت التحكم في عرض الأقسام -->
+<script>
+  function showSection(sectionId) {
+    const sections = document.querySelectorAll("section");
+    sections.forEach(sec => sec.classList.add("hidden"));
+    const section = document.getElementById(sectionId);
+    if (section) section.classList.remove("hidden");
+  }
+
+  // إظهار الصفحة الرئيسية عند التحميل
+  window.onload = () => {
+    const user = JSON.parse(localStorage.getItem('userLogin'));
+    if (user) {
+      showSection('home');
+    } else {
+      showSection('login');
+    }
+  };
+</script>
+
+<!-- سكربت تحميل PDF لبيانات الطلب -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+  function generatePDF(orderIndex = 0) {
+    const orders = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+    const order = orders[orderIndex];
+
+    if (!order) {
+      alert("لا يوجد بيانات للطلب.");
+      return;
+    }
+
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    doc.text(`تفاصيل الطلب`, 10, 10);
+    doc.text(`الاسم: ${order.name}`, 10, 20);
+    doc.text(`البريد الإلكتروني: ${order.email}`, 10, 30);
+    doc.text(`الخدمة: ${order.service}`, 10, 40);
+    doc.text(`الحالة: ${order.status || 'قيد التنفيذ'}`, 10, 50);
+
+    doc.save(`order_${orderIndex + 1}.pdf`);
+  }
+</script>
+
+<!-- زر تحميل PDF -->
+<div class="text-center mt-6">
+  <button onclick="generatePDF()" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded">
+    تحميل الطلب PDF
+  </button>
+</div>
+
+<!-- سكربت تحديث حالة الطلب -->
+<script>
+  function updateOrderStatus(index, newStatus) {
+    const orders = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+    if (orders[index]) {
+      orders[index].status = newStatus;
+      localStorage.setItem('submittedOrders', JSON.stringify(orders));
+      alert("تم تحديث الحالة إلى: " + newStatus);
+    }
+  }
+</script>
+
+<!-- زر تحديث إلى تم التنفيذ -->
+<div class="text-center mt-4">
+  <button onclick="updateOrderStatus(0, 'تم التنفيذ')" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded">
+    تغيير الحالة إلى "تم التنفيذ"
+  </button>
+</div>
+
+<!-- سكربت عداد الطلبات -->
+<script>
+  function showOrderCount() {
+    const orders = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+    document.getElementById('orderCount').innerText = orders.length;
+  }
+</script>
+
+<!-- عرض عدد الطلبات -->
+<div class="text-center mt-4">
+  <p class="text-lg font-semibold">عدد الطلبات الحالية: <span id="orderCount">0</span></p>
+</div>
+
+<!-- تحديث عداد الطلبات عند الدخول -->
+<script>
+  showOrderCount();
+</script>
+
+<!-- نهاية الصفحة -->
+<footer class="text-center mt-10 text-sm text-gray-400">
+  &copy; 2025 Branded Order. جميع الحقوق محفوظة.
+</footer>
+</body>
+</html>
+<!-- سكربت التحقق من تسجيل الدخول قبل الطلب -->
+<script>
+  function requireLoginBeforeOrder() {
+    const user = JSON.parse(localStorage.getItem('userLogin'));
+    if (!user) {
+      alert("يجب تسجيل الدخول قبل طلب الخدمة.");
+      showSection('login');
+      return false;
+    }
+    return true;
+  }
+
+  document.querySelectorAll(".service-button").forEach(button => {
+    button.addEventListener("click", (e) => {
+      if (!requireLoginBeforeOrder()) {
+        e.preventDefault();
+      }
+    });
+  });
+</script>
+
+<!-- نموذج الدخول وتسجيل الحساب -->
+<section id="auth" class="hidden text-center p-10">
+  <h2 class="text-2xl font-bold mb-4">الدخول / التسجيل</h2>
+  <form onsubmit="login(event)" class="max-w-sm mx-auto bg-white shadow rounded p-6 space-y-4">
+    <input type="email" id="loginEmail" required placeholder="البريد الإلكتروني" class="w-full p-2 border rounded" />
+    <input type="password" id="loginPassword" required placeholder="كلمة المرور" class="w-full p-2 border rounded" />
+    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded w-full">
+      تسجيل الدخول
+    </button>
+    <p class="text-sm mt-2 text-gray-600">ليس لديك حساب؟ <a href="#" onclick="toggleAuthMode()" class="text-blue-500 underline">أنشئ حساب</a></p>
+  </form>
+</section>
+
+<!-- تبديل بين تسجيل الدخول والتسجيل -->
+<script>
+  let isLoginMode = true;
+
+  function toggleAuthMode() {
+    isLoginMode = !isLoginMode;
+    const authSection = document.getElementById('auth');
+    authSection.querySelector('h2').innerText = isLoginMode ? "الدخول / التسجيل" : "تسجيل حساب جديد";
+    authSection.querySelector('button').innerText = isLoginMode ? "تسجيل الدخول" : "إنشاء حساب";
+  }
+
+  function login(event) {
+    event.preventDefault();
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("loginPassword").value;
+
+    if (!email || !password) {
+      alert("يرجى تعبئة جميع الحقول.");
+      return;
+    }
+
+    const user = { email, password };
+    localStorage.setItem('userLogin', JSON.stringify(user));
+    alert("تم تسجيل الدخول بنجاح.");
+    showSection('home');
+    showOrderCount();
+  }
+</script>
+
+<!-- زر تسجيل الخروج -->
+<div class="text-center mt-4">
+  <button onclick="logout()" class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded">
+    تسجيل الخروج
+  </button>
+</div>
+
+<script>
+  function logout() {
+    localStorage.removeItem('userLogin');
+    alert("تم تسجيل الخروج.");
+    showSection('login');
+  }
+</script>
+
+<!-- سكربت عرض تفاصيل الطلب -->
+<script>
+  function viewOrderDetails(index = 0) {
+    const orders = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+    const order = orders[index];
+    if (!order) {
+      alert("لا يوجد تفاصيل للعرض.");
+      return;
+    }
+
+    const details = `
+      الاسم: ${order.name}
+      البريد الإلكتروني: ${order.email}
+      الخدمة: ${order.service}
+      الحالة: ${order.status || "قيد التنفيذ"}
+    `;
+
+    alert(details);
+  }
+</script>
+
+<!-- زر عرض التفاصيل -->
+<div class="text-center mt-4">
+  <button onclick="viewOrderDetails()" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded">
+    عرض تفاصيل الطلب
+  </button>
+</div>
+
+<!-- سكربت الإشعار عبر البريد بعد الدفع -->
+<script>
+  function notifyAfterPayment(email) {
+    // إشعار وهمي - في النسخة النهائية تُربط بـ PHP أو backend فعلي
+    console.log(`تم إرسال إشعار إلى ${email}`);
+  }
+</script>
+
+<!-- مثال لاستدعاء الإشعار بعد الدفع -->
+<script>
+  const lastOrder = JSON.parse(localStorage.getItem('submittedOrders') || "[]").pop();
+  if (lastOrder && lastOrder.email) {
+    notifyAfterPayment(lastOrder.email);
+  }
+</script>
+
+<!-- تحسين الأداء وتأخير بعض العناصر -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      document.querySelector("#orderCount").classList.add("text-green-600");
+    }, 2000);
+  });
+</script>
+<!-- قسم تجريبي لإضافة تقييم المستخدم بعد تنفيذ الطلب -->
+<section id="feedback" class="hidden p-10 bg-gray-50 text-center">
+  <h2 class="text-2xl font-bold mb-6">قيم تجربتك معنا</h2>
+  <form onsubmit="submitFeedback(event)" class="max-w-md mx-auto space-y-4">
+    <textarea id="feedbackText" required rows="4" placeholder="اكتب ملاحظاتك أو تقييمك هنا..." class="w-full border p-3 rounded"></textarea>
+    <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded">
+      إرسال التقييم
+    </button>
+  </form>
+</section>
+
+<script>
+  function submitFeedback(event) {
+    event.preventDefault();
+    const feedback = document.getElementById("feedbackText").value;
+    if (!feedback) {
+      alert("يرجى كتابة التقييم.");
+      return;
+    }
+
+    let feedbacks = JSON.parse(localStorage.getItem('userFeedbacks') || "[]");
+    feedbacks.push({ feedback, date: new Date().toISOString() });
+    localStorage.setItem('userFeedbacks', JSON.stringify(feedbacks));
+    alert("شكرًا لتقييمك!");
+    document.getElementById("feedbackText").value = '';
+  }
+</script>
+
+<!-- قائمة عرض التقييمات (تُستخدم في لوحة تحكم الأدمن) -->
+<section id="feedbackList" class="hidden p-10">
+  <h2 class="text-2xl font-bold mb-4">آراء العملاء</h2>
+  <div id="feedbackContainer" class="space-y-4"></div>
+</section>
+
+<script>
+  function loadFeedbackList() {
+    const feedbacks = JSON.parse(localStorage.getItem('userFeedbacks') || "[]");
+    const container = document.getElementById("feedbackContainer");
+    container.innerHTML = '';
+    if (feedbacks.length === 0) {
+      container.innerHTML = "<p class='text-gray-500'>لا توجد تقييمات حتى الآن.</p>";
+      return;
+    }
+
+    feedbacks.forEach(f => {
+      const div = document.createElement("div");
+      div.className = "bg-white shadow p-4 rounded";
+      div.innerHTML = `<p>${f.feedback}</p><p class="text-sm text-gray-400 mt-2">${new Date(f.date).toLocaleString()}</p>`;
+      container.appendChild(div);
+    });
+  }
+</script>
+
+<!-- سكربت مخصص للأدمن: عرض جميع الطلبات -->
+<script>
+  function adminViewOrders() {
+    const orders = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+    if (orders.length === 0) {
+      alert("لا توجد طلبات حالياً.");
+      return;
+    }
+
+    let output = "";
+    orders.forEach((o, i) => {
+      output += `
+        الطلب رقم ${i + 1}:
+        الاسم: ${o.name}
+        البريد: ${o.email}
+        الخدمة: ${o.service}
+        الحالة: ${o.status || "قيد التنفيذ"}
+
+        -----------------------
+      `;
+    });
+
+    alert(output);
+  }
+</script>
+
+<!-- زر الإدمن لعرض الطلبات -->
+<div class="text-center mt-10">
+  <button onclick="adminViewOrders()" class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800">
+    عرض الطلبات (لوحة تحكم الإدمن)
+  </button>
+</div>
+
+<!-- تغيير حالة الطلب -->
+<script>
+  function markOrderAsCompleted(index = 0) {
+    let orders = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+    if (orders[index]) {
+      orders[index].status = "تم التنفيذ";
+      localStorage.setItem('submittedOrders', JSON.stringify(orders));
+      alert("تم تحديث حالة الطلب.");
+    } else {
+      alert("لم يتم العثور على الطلب.");
+    }
+  }
+</script>
+
+<!-- زر تغيير حالة الطلب -->
+<div class="text-center mt-4">
+  <button onclick="markOrderAsCompleted()" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded">
+    إنهاء الطلب الأول
+  </button>
+</div>
+
+<!-- تحميل الطلب كـ PDF -->
+<script>
+  function downloadOrderPDF(index = 0) {
+    const orders = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+    const order = orders[index];
+    if (!order) {
+      alert("لا يوجد طلب.");
+      return;
+    }
+
+    const content = `
+      اسم العميل: ${order.name}
+      البريد الإلكتروني: ${order.email}
+      نوع الخدمة: ${order.service}
+      الحالة: ${order.status || "قيد التنفيذ"}
+      التاريخ: ${new Date().toLocaleDateString()}
+    `;
+
+    const blob = new Blob([content], { type: "application/pdf" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "تفاصيل_الطلب.pdf";
+    a.click();
+
+    URL.revokeObjectURL(url);
+  }
+</script>
+
+<!-- زر تحميل PDF -->
+<div class="text-center mt-4">
+  <button onclick="downloadOrderPDF()" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded">
+    تحميل الطلب كـ PDF
+  </button>
+</div>
+<!-- سكربت عرض إشعار الدفع عند إتمام العملية -->
+<script>
+  function showPaymentSuccessMessage() {
+    const container = document.createElement('div');
+    container.className = 'fixed top-5 right-5 bg-green-500 text-white px-4 py-2 rounded shadow z-50';
+    container.textContent = 'تم الدفع بنجاح! تم استلام طلبك.';
+
+    document.body.appendChild(container);
+
+    setTimeout(() => {
+      container.remove();
+    }, 4000);
+  }
+
+  // تشغيل الرسالة بعد العودة من PayPal
+  if (window.location.href.includes("payment=success")) {
+    showPaymentSuccessMessage();
+  }
+</script>
+
+<!-- عرض عدد الطلبات -->
+<div class="text-center mt-10">
+  <button onclick="showOrderCount()" class="bg-blue-800 hover:bg-blue-900 text-white px-6 py-2 rounded">
+    عدد الطلبات المسجلة
+  </button>
+</div>
+
+<script>
+  function showOrderCount() {
+    const orders = JSON.parse(localStorage.getItem('submittedOrders') || "[]");
+    alert(`عدد الطلبات الحالية: ${orders.length}`);
+  }
+</script>
+
+<!-- زر تسجيل الخروج -->
+<div class="text-center mt-6">
+  <button onclick="logoutUser()" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded">
+    تسجيل الخروج
+  </button>
+</div>
+
+<script>
+  function logoutUser() {
+    localStorage.removeItem('loggedInUser');
+    alert("تم تسجيل الخروج");
+    window.location.reload();
+  }
+</script>
+
+<!-- منع تقديم الطلب بدون تسجيل الدخول -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const user = localStorage.getItem('loggedInUser');
+    const orderForm = document.getElementById('orderForm');
+    if (orderForm && !user) {
+      orderForm.classList.add('hidden');
+      const warning = document.createElement('div');
+      warning.className = 'text-red-500 font-bold text-center mt-4';
+      warning.textContent = 'يجب تسجيل الدخول لتقديم طلب';
+      orderForm.parentElement.insertBefore(warning, orderForm);
+    }
+  });
+</script>
+
+<!-- سكربت لعرض اسم المستخدم في الصفحة -->
+<script>
+  const loggedUser = JSON.parse(localStorage.getItem("loggedInUser") || "{}");
+  if (loggedUser.name) {
+    const welcomeEl = document.createElement("p");
+    welcomeEl.className = "text-center mt-6 text-lg text-gray-700";
+    welcomeEl.textContent = `مرحباً بك، ${loggedUser.name}`;
+    document.body.prepend(welcomeEl);
+  }
+</script>
+
+<!-- نهاية الصفحة -->
+<footer class="mt-20 p-6 bg-gray-100 text-center text-sm text-gray-500">
+  &copy; 2025 - جميع الحقوق محفوظة لموقع Branded Services
+</footer>
+
+</body>
+</html>
